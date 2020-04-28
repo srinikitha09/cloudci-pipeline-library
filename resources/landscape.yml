@@ -1,0 +1,7 @@
+# Cloudci pipeline specific configuration
+general:
+  jenkinsKubernetes:
+    jnlpAgent: 'jenkins/jnlp-slave:4.0.1-1'
+steps:
+  dockerExecute:
+    dockerPullImage: false
