@@ -2,6 +2,9 @@
 general:
   jenkinsKubernetes:
     jnlpAgent: 'jenkins/jnlp-slave:4.0.1-1'
+    securityContext: 
+      runAsUser: 1000
+      fsGroup  : 1000
 steps:
   dockerExecute:
     dockerPullImage: false
